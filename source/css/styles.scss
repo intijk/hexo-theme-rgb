@@ -6,9 +6,33 @@ $headerSize: 30px;
 $contentWidth:800px;
 $pagerSize: 25px;
 
+body{
+	background-color: #f5f5f5;
+}
+
 body,li,ol,h1,h2,p{
 	font-size: 16px;
-	font-family: "Source Sans Pro", "微软雅黑", "Roboto" ;
+	font-family: "Roboto", "微软雅黑", "Roboto" ;
+}
+h1{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+h2{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+blockquote{
+	font-family: "Helvetica Neue,Helvetica,Arial,sans-serif";
+	p{
+	font-family: "Helvetica Neue,Helvetica,Arial,sans-serif";
+	font-size: 17px;
+	}
+}
+footer strong{
+	font-size: 16px;
+	font-family: "微软雅黑", "Roboto" ;
 }
 .next{
 	color:$green;
@@ -66,6 +90,8 @@ header{
 	margin-top:10px;
 	border-top-width:8px;
 	padding:15px;
+	box-shadow:1px -1px 10px #999;	
+	background-color: #fff;
 }
 
 .itemdate{

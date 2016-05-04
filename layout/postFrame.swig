@@ -27,11 +27,8 @@
 		#}
 		<div class="itemtext">
 			<h4 class="itemheader"><a class="{% if index%3==0 %}red{% elif index%3==1 %}green{% else %}blue{% endif %}-text" href="{{item.permalink}}">{{ item.title }}</a></h4>
-			<br/>
 			<div class="itemdate">{{ item.date | date('M d, Y') }}</div>
-		</div>
-		<div style="clear:both;"></div>
-		<div class="itemtext">
+			<div style="clear:both;"></div>
 			<p>
 			{% if full %}
 				{{ item.content }}
