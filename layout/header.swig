@@ -1,1 +1,8 @@
-<header><a href="/">{{ config.title|upper }}</a></header>
+<header><a href="{{config.url}}">{{config.title}} <span class="subtitle">{{config.subtitle}}</span></header>
+<table class="header">
+	<tr>
+		<td class="red"></td>
+		<td class="green"></td>
+		<td class="blue"></td>
+	</tr>
+</table>

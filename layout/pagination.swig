@@ -1,5 +1,4 @@
-<div class="container">
-	<br/>
+<div class="container" id="pagination">
 	{% if page.prev %}
 	<a href="{{ url_for(page.prev_link) }}" class="prev"><i class="fa fa-chevron-left"></i> {{ __('prev') }}</a>
 	{% endif %}

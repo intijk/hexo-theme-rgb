@@ -3,7 +3,7 @@
 @import "public.scss";
 @import "highlight.scss";
 $headerSize: 30px;
-$contentWidth:800px;
+$contentWidth:750px;
 $pagerSize: 25px;
 
 body{
@@ -53,16 +53,13 @@ a:hover{
 }
 
 header{
+	padding-left: 0.5em;
 	font-size: $headerSize+20px;
 	font-family: 'Lato', sans-serif;
 	a{
-		color: $green;
+		color: black;
 		text-decoration: None;
 	}
-}
-
-.container{
-	width:100%;
 }
 
 @media screen and (min-width:$contentWidth){
@@ -149,11 +146,17 @@ header{
 	margin-right:15px;	
 }
 
+.container, .colobar{
+	padding: 0px;
+	padding-right:0px;
+	padding-left:0px;
+}
+
 .barshape{
 	display:inline-block;
 	width:33%;
 	height:0.5em;
-	margin-right:-0.3em;
+	margin-right:-4px;
 }
 
 .blue-border{
@@ -207,4 +210,25 @@ header{
 	height:40px;
 }
 
+.banner{
+	display:block;
+	width:100%;
+}
+.header{
+	box-shadow:1px -1px 4px #999;	
+	width:100%;
+}
+.header td.blue{
+	width: 33.333%;
+	height: 4px;
+}
 
+#pagination{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.subtitle{
+	color:black;
+	font-size: 0.3em;
+}
