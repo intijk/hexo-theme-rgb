@@ -2,14 +2,16 @@
 
 $keyword:#ea284f;
 $functionTitle:#a6e22e;
-$codebg: #333;
+$codebg: #eff0f1;
 $string: #a87bc1;
-$default: #fff;
-$type: #E6DB74;
-
+$default: #000;
+$type: #cc7a00;
+$metaString: #0073e6;
+$font:'Source Code Pro', "Roboto","sans-serif","微软雅黑","Helvetica Neue";
+$fontSize: 15px;
 .gutter,.code{
 	pre{
-		font-size: 15px;
+		font-size: $fontSize;
 		color:$green;
 		background-color: $codebg;
 	}
@@ -26,7 +28,7 @@ $type: #E6DB74;
 		color: $default;
 	}
 	.meta-string{
-		color: $blue;
+		color: $metaString;
 	}
 	.string{
 		color: $string;
@@ -35,7 +37,7 @@ $type: #E6DB74;
 		color: $default;
 	}
 	.built_in{
-		color: $red;
+		color: $keyword;
 	}
 	.number{
 		color: $string;
@@ -43,7 +45,7 @@ $type: #E6DB74;
 	.function{
 		.keyword{
 			// return type;
-			color: $blue;
+			color: $metaString;
 		}
 		.title {
 			// function name
@@ -57,4 +59,41 @@ $type: #E6DB74;
 			}
 		}
 	}
+}
+
+figure{
+	margin-top: 10px;
+}
+figure table{
+	border-radius:0px;
+	table-layout: fixed;
+	min-width: 100%;
+	max-width: 100%;
+}
+figure figcaption{
+	font-size: 17px;
+	a{
+		float: right;	
+	}
+}
+figure .gutter{
+	width: 40px;
+}
+
+code{
+	font-family:$font;
+	font-size: $fontSize;
+}
+pre{
+	font-size: $fontSize;
+	font-family:$font;
+	background-color: $codebg;
+	color: $default;
+}
+.highlight{
+	overflow: auto;
+}
+
+footer cite::before{
+	content: "\00a0\00a0";
 }

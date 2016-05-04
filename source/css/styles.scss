@@ -6,7 +6,10 @@ $headerSize: 30px;
 $contentWidth:800px;
 $pagerSize: 25px;
 
-
+body,li,ol,h1,h2,p{
+	font-size: 16px;
+	font-family: "Source Sans Pro", "微软雅黑", "Roboto" ;
+}
 .next{
 	color:$green;
 	font-size: $pagerSize;
@@ -85,7 +88,7 @@ header{
 }
 .itemtext{
 	position:relative;
-	text-align: justify;
+	//text-align: justify;
 	h1{
 		font-size:19px;
 	}
@@ -178,19 +181,4 @@ header{
 	height:40px;
 }
 
-figure table{
-	border-radius:0px;
-	table-layout: fixed;
-	min-width: 100%;
-	max-width: 100%;
-}
-figure .gutter{
-	width: 40px;
-}
-code{
-	border-radius:0px;
-}
-.highlight{
-	overflow: auto;
-}
 
