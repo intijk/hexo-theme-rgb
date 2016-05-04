@@ -73,7 +73,6 @@ header{
 }
 .header{
 	font-family: "Times New Roman", Times, serif;
-	min-height:200px;
 }
 .colorbar{
 }
@@ -218,7 +217,7 @@ header{
 	box-shadow:1px -1px 4px #999;	
 	width:100%;
 }
-.header td.blue{
+.header td{
 	width: 33.333%;
 	height: 4px;
 }
