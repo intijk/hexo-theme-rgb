@@ -1,0 +1,60 @@
+@import "public.scss";
+
+$keyword:#ea284f;
+$functionTitle:#a6e22e;
+$codebg: #333;
+$string: #a87bc1;
+$default: #fff;
+$type: #E6DB74;
+
+.gutter,.code{
+	pre{
+		font-size: 15px;
+		color:$green;
+		background-color: $codebg;
+	}
+}
+
+.code{
+	.line{
+		color: $default;
+	}
+	.meta{
+		color: $string;
+	}
+	.meta-keyword{
+		color: $default;
+	}
+	.meta-string{
+		color: $blue;
+	}
+	.string{
+		color: $string;
+	}
+	.keyword{
+		color: $default;
+	}
+	.built_in{
+		color: $red;
+	}
+	.number{
+		color: $string;
+	}
+	.function{
+		.keyword{
+			// return type;
+			color: $blue;
+		}
+		.title {
+			// function name
+			color: $keyword;
+		}
+		.params{
+			//param list
+			.keyword{
+				color: $type;
+				//param type
+			}
+		}
+	}
+}

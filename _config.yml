@@ -1,0 +1,8 @@
+title:
+  hexo-theme-rgb 
+
+# hexo-renderer-sass
+node_sass:
+  outputStyle: nested
+  precision: 5
+  sourceComments: false

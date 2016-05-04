@@ -1,0 +1,196 @@
+@import "bs-callout.scss";
+@import "radial.scss";
+@import "public.scss";
+@import "highlight.scss";
+$headerSize: 30px;
+$contentWidth:800px;
+$pagerSize: 25px;
+
+
+.next{
+	color:$green;
+	font-size: $pagerSize;
+	float:right;
+}
+
+.prev{
+	color:$blue;
+	font-size: $pagerSize;
+}
+
+a{
+	text-decoration: None;
+}
+a:hover{
+	text-decoration: None;
+}
+
+header{
+	font-size: $headerSize+20px;
+	font-family: 'Lato', sans-serif;
+	a{
+		color: $green;
+		text-decoration: None;
+	}
+}
+
+.container{
+	width:100%;
+}
+
+@media screen and (min-width:$contentWidth){
+	.container{
+		width:$contentWidth;
+	}
+}
+
+*{
+	font-size:100%;
+}
+.header{
+	font-family: "Times New Roman", Times, serif;
+	min-height:200px;
+}
+.colorbar{
+}
+.itemframe{
+	height:100%;
+	border-color:#ddd;
+	border-radius:0px 0px 4px 4px;
+	border-style:solid;
+	border-width:1px;
+	position:relative;
+	margin-top:10px;
+	border-top-width:8px;
+	padding:15px;
+}
+
+.itemdate{
+	color: #aaa;
+}
+
+.itempic{
+	position:relative;
+	margin:15px;
+	z-index:1;
+}
+
+.itemheader{
+	font-size: $headerSize;
+	margin-top:15px;
+	color: $green;
+	a {
+		text-decoration: None;	
+	}		
+}
+.itemtext{
+	position:relative;
+	text-align: justify;
+	h1{
+		font-size:19px;
+	}
+	h2{
+		font-size:16px;
+	}
+	img{
+		max-width:100%;
+	}
+}
+
+.grouptext{
+	margin-left:15px;
+	margin-top:2em;
+	border-radius:8px 8px 0px 0px;
+	font-size:1.5em;	
+	background-color:$green;
+	color:#ffffff;
+	padding-left:10px;
+	padding-right:10px;
+	width:min-content;
+	width:-moz-min-content;
+	width:-webkit-min-content;
+}
+
+.groupline{
+	margin:0px;
+	margin-left:15px;
+	border-width:4px;
+	border-color:$green;
+	margin-bottom:12px;
+	margin-right:15px;	
+}
+
+.barshape{
+	display:inline-block;
+	width:33%;
+	height:0.5em;
+	margin-right:-0.3em;
+}
+
+.blue-border{
+	border-color:$blue;
+}
+
+.blue{
+	@extend .blue-border;
+	background-color:$blue;
+}
+.red-border{
+	border-color:$red;
+}
+.red{
+	@extend .red-border;
+	background-color:$red;
+}
+.green-border{
+	border-color:$green;
+}
+.green{
+	@extend .green-border;
+	background-color:$green;
+}
+.red-text{
+	color: $red;
+}
+.green-text{
+	color: $green;
+}
+.blue-text{
+	color: $blue;
+}
+.blockshape{
+	width:40px;
+	height:40px;
+	clear:both;
+}
+
+.text-frame{
+	line-height:200%;
+}
+
+.text-title{
+	padding:0px;
+	margin:0px;
+	vertical-align:baseline;
+}
+
+.text-img{
+	height:40px;
+}
+
+figure table{
+	border-radius:0px;
+	table-layout: fixed;
+	min-width: 100%;
+	max-width: 100%;
+}
+figure .gutter{
+	width: 40px;
+}
+code{
+	border-radius:0px;
+}
+.highlight{
+	overflow: auto;
+}
+

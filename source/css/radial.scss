@@ -1,0 +1,52 @@
+$circle-size:80px;
+$circle-background: #ffffff;
+$circle-color:#97a71d;
+$transition-length: 0.2s;
+$fill-color:#b3c833;
+$radial-width:3px;
+
+.radial{
+	width:$circle-size;
+	height:$circle-size;
+	position:absolute;
+	float:left;
+	.circle{
+		width:$circle-size;
+		height:$circle-size;
+		border-radius:50%;
+		background-color: $circle-background;
+		.mask{
+			position:absolute;
+			width:$circle-size;
+			height:$circle-size;
+			border-radius:50%;
+			clip: rect(0px, $circle-size, $circle-size, $circle-size/2);	
+			transition-duration:$transition-length;
+			.fill{
+				position: absolute;
+				width:$circle-size;
+				height:$circle-size;
+				border-radius:50%;
+				background-color:$fill-color;
+				clip: rect(0px, $circle-size/2, $circle-size, 0px);
+				transition-duration:$transition-length;
+				transition-timing-function: linear;
+			}
+		}
+	}
+}
+
+.inset{
+	margin-top:$radial-width;
+	margin-left:$radial-width;
+	position:absolute;
+	width:(($circle-size)-2*$radial-width);
+	height:(($circle-size)-2*$radial-width);
+	border-radius:50%;
+	background-color: #ffffff;
+	transition-timing-function: linear;
+}
+
+.inset img{
+	border-radius:50%;
+}
