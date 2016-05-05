@@ -3,6 +3,7 @@
 
 {% block content %}
 <div class="container">
-{{ postFrame.input(page, 1, 1) }}
+{{ postFrame.input(page, page.index_posts, 1) }}
 </div>
+
 {% endblock %}

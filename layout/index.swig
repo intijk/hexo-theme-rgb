@@ -4,7 +4,7 @@
 {% block content %}
 <div class="container">
 	{% for post in page.posts %}
-		{{ postFrame.input(post, loop.index0) }}
+		{{ postFrame.input(post, post.index_posts) }}
 	{% endfor %}
 </div>
 {% include 'pagination.swig' %}
