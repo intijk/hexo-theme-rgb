@@ -1,0 +1,16 @@
+<div class="col-md-12">
+	<div class="itemframe <%- color %>-border" >
+		<div class="itemtext">
+			<h4 class="itemheader"><a class="<%- color %>-text" href="<%- post.permalink %>"><%- post.title %></a></h4>
+			<div class="itemdate"><%- date(post.date, 'MMM DD, YYYY') %></div>
+			<div style="clear:both;"></div>
+			<p>
+			<% if(full || !post.excerpt){ %>
+				<%- post.content %>
+			<% }else{ %>
+				<%- post.excerpt %>
+			<% } %>
+			</p>
+		</div>
+	</div>
+</div>
