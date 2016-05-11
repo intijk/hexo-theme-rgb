@@ -1,10 +1,5 @@
 {% import 'archivePost.swig' as archivePost %}
-{% import 'header.swig' as postFrame %}
-
 {% extends 'b.swig' %}
-{% block header %}
-{{ header.input("archives") }}
-{% endblock %}
 {% block content %}
 {% for post in page.posts %} 
     {% if loop.first %} 

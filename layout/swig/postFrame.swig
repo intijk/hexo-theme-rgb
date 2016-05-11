@@ -1,4 +1,8 @@
 {% macro input(item, index, full) %}
+{#
+ color = 
+ {% if index%3==0 %}red{% elif index%3==1 %}green{% else %}blue{% endif %}
+#}
 <div class="col-md-12">
 	<div class="itemframe {% if index%3==0 %}red{% elif index%3==1 %}green{% else %}blue{% endif %}-border" >
 		{# if post have picture, use radial #}

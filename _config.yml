@@ -6,3 +6,7 @@ node_sass:
   outputStyle: nested
   precision: 5
   sourceComments: false
+
+comment:
+	enable: true;
+	disqus_shortname: intijk

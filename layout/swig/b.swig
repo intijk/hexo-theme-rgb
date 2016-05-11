@@ -1,4 +1,3 @@
-{% import 'header.swig' as header %}
 {% extends 'frame.swig' %}
 
 {% block css %}
@@ -10,7 +9,9 @@
 {% endblock %}
 
 {% block header %}
-{{ header.input('b') }}
+{% include 'header.swig' %}
+<br/>
+<br/>
 {% endblock %}
 
 {% block footer %}
