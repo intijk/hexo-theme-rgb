@@ -24,4 +24,5 @@
     {% endif %}
 {% endfor %}
 </div></section>
+{% include 'pagination.swig' %}
 {% endblock %}
