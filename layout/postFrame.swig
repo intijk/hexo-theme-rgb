@@ -22,7 +22,7 @@
 		</div>
 		#}
 		<div class="itemtext">
-			<h4 class="itemheader"><a class="{% if index%3==0 %}red{% elif index%3==1 %}green{% else %}blue{% endif %}-text" href="{{item.permalink}}">{{ item.title }}</a></h4>
+			<h4 class="itemheader"><a class="{% if index%3==0 %}red{% elif index%3==1 %}green{% else %}blue{% endif %}-text" href="{{ url_for(item.path) }}">{{ item.title }}</a></h4>
 			<div class="itemdate">{{ item.date | date('M d, Y') }}</div>
 			<div style="clear:both;"></div>
 			<p> {% if full %}

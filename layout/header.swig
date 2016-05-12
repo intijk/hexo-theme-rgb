@@ -12,15 +12,15 @@
 				{% endif %}
 
 				{% if caller=="archives" %}
-				<li class="active"><a href="/archives">Archives</a></li>
+				<li class="active"><a href="{{ url_for("archives") }}">Archives</a></li>
 				{% else %}
-				<li><a href="/archives">Archives</a></li>
+				<li><a href="{{ url_for("archives") }}">Archives</a></li>
 				{% endif %}
 
 				{% if caller=="About" %}
-				<li class="active"><a href="/about">About</a></li>
+				<li class="active"><a href="{{url_for("about")}}">About</a></li>
 				{% else %}
-				<li><a href="/about">About</a></li>
+				<li><a href="{{ url_for("about") }}">About</a></li>
 				{% endif %}
 			</ul>	
 		</nav>
