@@ -23,7 +23,7 @@
 {% endblock %}
 
 {% block endscript %}
-<script src="{{ config.url}}/js/endscript.js" ></script>
+<script src="{{ url_for("js/endscript.js") }}" ></script>
 {% endblock %}
 
 
