@@ -8,5 +8,5 @@ node_sass:
   sourceComments: false
 
 comment:
-	enable: true;
-	disqus_shortname: intijk
+  enable: true;
+  disqus_shortname: intijk

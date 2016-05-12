@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-rgb",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "An RGB color theme for Hexo",
   "main": "index.js",
   "scripts": {
@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/intijk/hexo-theme-rgb/issues" 
   },
-  "homepage": "https://www.npmjs.com/package/hexo-theme-rgb",
-  "dependencies": {
-    "hexo-renderer-sass": "^0.2.0";
-  }
+  "homepage": "https://www.npmjs.com/package/hexo-theme-rgb"
 }
