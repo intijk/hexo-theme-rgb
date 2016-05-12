@@ -1,11 +1,22 @@
 {
   "name": "hexo-theme-rgb",
-  "version": "0.0.1",
+  "version": "0.3.0",
   "description": "An RGB color theme for Hexo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:intijk/hexo-theme-rgb.git"
+  },
   "author": "intijk",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/intijk/hexo-theme-rgb/issues" 
+  },
+  "homepage": "https://www.npmjs.com/package/hexo-theme-rgb",
+  "dependencies": {
+    "hexo-renderer-sass": "^0.2.0";
+  }
 }

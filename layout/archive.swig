@@ -12,15 +12,15 @@
         <section class="archive-wrap">
         <div class="archive-year-wrap container">
         <div class="col-md-12"> <a href="{{ url_for('archives/'+last) }}" class="archive-year">{{ last }} </a> </div>
-        {{ archivePost.input(post, loop.index0) }}
+        {{ archivePost.input(post, loop.index) }}
     {% elseif last != post.date.year() %} 
         </div>
         {% set last = post.date.year() %}
         <div class="archive-year-wrap container">
         <div class="col-md-12"><a href="{{ url_for('archives/'+last) }}" class="archive-year">{{ last }} </a></div>
-        {{ archivePost.input(post, loop.index0) }}
+        {{ archivePost.input(post, loop.index) }}
     {% else %}
-        {{ archivePost.input(post, loop.index0) }}
+        {{ archivePost.input(post, loop.index) }}
     {% endif %}
 {% endfor %}
 </div></section>

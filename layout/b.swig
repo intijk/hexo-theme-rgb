@@ -1,5 +1,10 @@
 {% import 'header.swig' as header %}
+{% import 'title.swig' as titlem %}
 {% extends 'frame.swig' %}
+
+{% block title %}
+{{ titlem.input("") }}
+{% endblock %}
 
 {% block css %}
 {% include 'css.swig' %}

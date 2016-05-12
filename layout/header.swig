@@ -26,7 +26,7 @@
 		</nav>
 	</div>
 </header>
-<table class="header">
+<table class="headerbar">
 	<tr>
 		<td class="red"></td>
 		<td class="green"></td>

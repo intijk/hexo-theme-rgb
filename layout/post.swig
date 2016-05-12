@@ -1,6 +1,9 @@
+{% import 'title.swig' as titlem %}
 {% import 'postFrame.swig' as postFrame %}
 {% extends 'b.swig' %}
-
+{% block title %}
+{{ titlem.input(page.title) }}
+{% endblock %}
 {% block content %}
 <div class="container">
 {{ postFrame.input(page, page.index_posts, 1) }}
