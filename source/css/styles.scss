@@ -234,6 +234,9 @@ $activeBackgroundTop: rgba(231,231,231, 1);
 	img{
 		max-width:100%;
 	}
+	.easyzoom-flyout img{
+		max-width: unset;
+	}
 }
 
 .grouptext{
